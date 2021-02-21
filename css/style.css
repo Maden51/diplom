@@ -107,6 +107,9 @@ body {
       color: #0f0d0e;
       text-transform: uppercase;
       position: relative;
+      text-align: center;
+      margin-top: 65px;
+      margin-bottom: 40px;
   }
 
   .trends-title::after {
@@ -115,8 +118,8 @@ body {
       background: #b59f5b;
       height: 3px;
       position: absolute;
-      left: 105px;
-      bottom: -5px;
+      left: 48.5%;
+      bottom: -10px;
       opacity: 0.4;
   }
 
@@ -213,6 +216,10 @@ body {
     height: 320px;
   }
 
+  .trend-link {
+      text-decoration: none;
+      color: #ffffff;
+  }
 
   
   .main-content {
