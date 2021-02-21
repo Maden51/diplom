@@ -124,17 +124,22 @@ body {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      width: 100%;
   }
 
   .trend-card:nth-child(-n+3) {
-     margin-right: 1%;
+     margin-right: 5px;
   }
 
   .trend-card {
+      display: flex;
+      align-items: flex-end;
       position: relative;
       background-color: #eff6f1;
       z-index: 0;
+      width: 25%;
+      padding-right: 20px;
+      padding-bottom: 15px;
+      padding-left: 20px;
   }
 
   .trend-card::after {
@@ -152,8 +157,9 @@ body {
   .trend-content {
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       border: 3px solid #b59f5b;
-      opacity: 0.6;
+      padding: 35px 30px ;
   }
 
   .trend-tags {
@@ -161,6 +167,12 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
       list-style-type: none;
+      padding-inline-start: unset;
+      margin-bottom: 0;
+  }
+
+  .trend-tag {
+      margin-right: 15px;
   }
 
   .trend-text {
@@ -169,6 +181,9 @@ body {
       font-family: "Open Sans", arial, sans-serif;
       line-height: 24px;
       color: #ffffff;
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 0;
   }
 
   .trend-text:hover {
@@ -194,6 +209,8 @@ body {
   .trend-image1, .trend-image2, .trend-image3, .trend-image4 {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 320px;
   }
 
 
