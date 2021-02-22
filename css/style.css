@@ -699,6 +699,7 @@ body {
   }
 
   .product {
+    width: 33.33%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -721,7 +722,6 @@ body {
   }
 
   .product-body {
-    width: 340px;
     height: 100%;
     padding: 55px 20px 20px;
     margin-top: -40px;
@@ -734,13 +734,13 @@ body {
     font-weight: bold;
     font-family: inherit;
     text-transform: uppercase;
+    margin: 0;
     line-height: 24px;
     color: #0f0d0e;
   }
 
   .product-description {
     font-size: 15px;
-    line-height: 22px;
   }
 
   .product-description-link {
