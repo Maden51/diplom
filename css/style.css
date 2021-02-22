@@ -230,7 +230,6 @@ body {
     margin-top: 63px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -659,6 +658,14 @@ body {
     vertical-align: super;
   }
 
+  .products {
+    font-family: "Open Sans" , arial, sans-serif;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+  }
+
   .products-title {
     font-size: 20px;
     font-weight: bold;
@@ -667,7 +674,6 @@ body {
     text-align: center;
     text-transform: uppercase;
     line-height: 29.15px;
-    margin-top: 65px;
     margin-bottom: 45px;
   }
 
@@ -694,8 +700,15 @@ body {
   }
 
   .product {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     color: #0f0d0e;
+  }
+
+  .product-imgbox {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .product-image {
@@ -714,6 +727,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     font-family: inherit;
+    text-transform: uppercase;
     line-height: 24px;
     color: #0f0d0e;
   }
@@ -746,7 +760,6 @@ body {
   .product-price {
     font-size: 20px;
     font-weight: bold;
-    line-height: 24px;
     display: flex;
   }
 
@@ -754,7 +767,6 @@ body {
     text-decoration: line-through;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 5px;
   }
 
   .product-rub {
@@ -764,7 +776,7 @@ body {
   .product-button {
     border: none;
     background-color: #b59f5b;
-    padding: .6em 1.8em;
+    padding: 1em 2em;
     cursor: pointer;
     text-transform: uppercase;
     font-family: inherit;
