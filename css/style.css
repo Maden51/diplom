@@ -698,7 +698,7 @@ body {
     box-sizing: border-box;
   }
 
-  .product-list:nth-child(-n+2) {
+  .product-list:nth-child(-1n+2) {
     padding-right: 65px;
   }
 
