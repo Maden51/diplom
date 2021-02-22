@@ -103,10 +103,9 @@ body {
       font-size: 20px;
       font-weight: bold;
       font-family: "Open Sans", arial, sans-serif;
-      line-height: 29px;
+      line-height: 29.15px;
       color: #0f0d0e;
       text-transform: uppercase;
-      position: relative;
       text-align: center;
       margin-top: 65px;
       margin-bottom: 40px;
@@ -117,9 +116,10 @@ body {
       width: 65px;
       background: #b59f5b;
       height: 3px;
-      position: absolute;
-      left: 48.5%;
-      bottom: -10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 10px;
       opacity: 0.4;
   }
 
@@ -175,6 +175,9 @@ body {
   }
 
   .trend-tag {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Open Sans", arial, sans-serif;
       margin-right: 15px;
   }
 
@@ -187,10 +190,6 @@ body {
       text-transform: uppercase;
       margin-top: 5px;
       margin-bottom: 0;
-  }
-
-  .trend-text:hover {
-      color: #b59f5b;
   }
 
   .trend-image1 {
@@ -219,6 +218,10 @@ body {
   .trend-link {
       text-decoration: none;
       color: #ffffff;
+  }
+  
+  .trend-link:hover {
+      color: #b59f5b;
   }
 
   
@@ -655,7 +658,121 @@ body {
     line-height: 36.82px;
     vertical-align: super;
   }
-  
+
+  .products-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    color: #0f0d0e;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 29.15px;
+    margin-top: 65px;
+    margin-bottom: 45px;
+  }
+
+  .products-title::after {
+    content: "";
+    width: 65px;
+    background: #b59f5b;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    opacity: 0.4;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .product {
+    box-sizing: border-box;
+    color: #0f0d0e;
+  }
+
+  .product-image {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .product-body {
+    padding: 55px 20px 20px;
+    margin-top: -25px;
+    border: 3px solid #b59f5b;
+  }
+
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    line-height: 24px;
+    color: #0f0d0e;
+  }
+
+  .product-description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .product-description:hover {
+    font-weight: bold;
+  }
+
+  .product-description-link {
+    text-decoration: none;
+    color: #b59f5b;
+  }
+
+  .product-description-link:hover {
+    text-decoration: underline;
+  }
+
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 25px;
+  }
+
+  .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    display: flex;
+  }
+
+  .product-price-old {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .product-rub {
+    margin-left: 0.2em;
+  }
+
+  .product-button {
+    border: none;
+    background-color: #b59f5b;
+    padding: .6em 1.8em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+ 
   .footer {
     width: 1170px;
     padding-left: 15px;
