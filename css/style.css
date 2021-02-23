@@ -1080,3 +1080,7 @@ body {
    left: 50%;
    position: absolute;
  }
+
+ .hidden {
+   display: none;
+ }
