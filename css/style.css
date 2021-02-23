@@ -1061,13 +1061,13 @@ body {
    width: 20px;
    height: 20px;
    position: absolute;
+   padding: 0;
    border: none;
-   top: -1.5em;
-   right: 0;
+   top: -3em;
+   right: 1.5em;
    cursor: pointer;
-   clip: rect(1px, 1px, 1px, 1px);
-   height: 1px;
-   width: 1px;
+   text-indent: -9999px;
+   
  }
 
  .popup-close::after {
