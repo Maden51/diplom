@@ -985,7 +985,7 @@ body {
   }
 
   .select:focus {
-    border: none;
+    outline: none;
   }
 
   .radio-group {
@@ -1042,7 +1042,7 @@ body {
   }
 
   .textarea-field:focus {
-    border: none;
+    outline: none;
   }
 
  .popup-button {
