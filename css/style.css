@@ -905,10 +905,12 @@ body {
     height: 100vh;
     box-sizing: border-box;
     position: fixed;
+    top: 0;
     padding-top: 240px;
     padding-bottom: 160px;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.75)
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: "Open Sans", arial, sans-serif;
   }
 
   .popup-container {
@@ -927,7 +929,8 @@ body {
     text-transform: uppercase;
     line-height: 29.15px;
     padding-top: 50px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 
   .popup-title::after {
@@ -950,11 +953,11 @@ body {
     margin-top: 30px;
   }
 
-  .form-hint {
+  .form--hint {
     display: block;
     font-size: 14px;
     font-family: inherit;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .select {
@@ -976,8 +979,13 @@ body {
 
     background-image: url(../svg/form-arrows.svg);
     background-repeat: no-repeat;
-    background-position: right 5px center;
+    background-position: right 10px center;
+    background-size: 10px;
     background-color: #f4f7f6;
+  }
+
+  .select:focus {
+    border: none;
   }
 
   .radio-group {
@@ -1005,10 +1013,10 @@ body {
     display: inline-block;
     vertical-align: middle;
 
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 
-    margin-right: 8px;
+    margin-right: 3px;
 
     background-image: url(../svg/form-empty-circle.svg);
     background-repeat: no-repeat;
@@ -1027,9 +1035,15 @@ body {
     max-width: 325px;
     padding: 20px;
     box-sizing: border-box;
+    border: none;
     background-color: #f4f7f6;
     font-family: inherit;
- }
+    resize: none;
+  }
+
+  .textarea-field:focus {
+    border: none;
+  }
 
  .popup-button {
    border: none;
@@ -1043,13 +1057,26 @@ body {
  }
 
  .popup-close {
-   background-image: url(../svg/form-x.svg);
-   background-repeat: no-repeat;
-   background-position: center center;
+   display: inline-block;
    width: 20px;
    height: 20px;
    position: absolute;
+   border: none;
    top: -1.5em;
    right: 0;
-   
+   cursor: pointer;
+   clip: rect(1px, 1px, 1px, 1px);
+   height: 1px;
+   width: 1px;
+ }
+
+ .popup-close::after {
+   content: "";
+   background-image: url(../svg/form-x.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 20px;
+   top: 50%;
+   left: 50%;
+   position: absolute;
  }
