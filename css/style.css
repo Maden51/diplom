@@ -1175,7 +1175,7 @@
 
   @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
     .trend-card {
-      width: calc(99%/2)
+      width: calc(99%/2);
     }
 
     .trend-card:nth-child(-n+2) {
@@ -1185,7 +1185,7 @@
 
   @media (max-width: 640px) and (orientation: landscape) {
     .trend-card {
-      width: calc(99%/2)
+      width: calc(99%/2);
     }
 
     .trend-card:nth-child(-n+2) {
