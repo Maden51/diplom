@@ -1183,7 +1183,7 @@
     }
   }
 
-  @media (max-width: 640px) and (orientation: landscape) {
+  @media (max-width: 640px) {
     .trend-card {
       width: calc(99%/2);
     }
