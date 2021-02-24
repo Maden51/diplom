@@ -1161,6 +1161,7 @@
 
   .card-content {
     max-width: 400px;
+    margin-left: 0;
   }
  }
 
@@ -1203,3 +1204,4 @@
       background-image: url(../images/banner-mobile.jpg);
     }
   }
+ }
