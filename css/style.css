@@ -1141,7 +1141,7 @@ body {
      display: inline-block;
    }
 
-   .main-content {
+   .card {
      flex-direction: column;
    }
   }
