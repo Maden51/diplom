@@ -1,4 +1,4 @@
-body {
+  body {
     margin: 0;
   }
   
@@ -1146,6 +1146,24 @@ body {
    display: none;
  }
 
+ @media (max-width: 1200px) {
+  .menu-list {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-block;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card-content {
+    max-width: 400px;
+  }
+ }
+
  @media (min-width: 641px) and (max-width:1200px) {
    .header {
      background-image: url(../images/banner-bg-tablet.jpg);
@@ -1178,25 +1196,6 @@ body {
       width: 100%;
       margin-bottom: 0.5%;
     }
-  }
-
-  @media (max-width: 1200px) {
-    .menu-list {
-      display: none;
-    }
- 
-    .menu-button {
-      display: inline-block;
-    }
- 
-    .card {
-      flex-direction: column;
-    }
- 
-    .card-content {
-      max-width: 400px;
-    }
-   }
   }
 
   @media (max-width: 640px) {
