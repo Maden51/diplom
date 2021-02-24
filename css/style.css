@@ -194,6 +194,7 @@
 
   .trends {
       display: flex;
+      flex-wrap: wrap;
   }
 
   .trend-card:nth-child(-n+3) {
