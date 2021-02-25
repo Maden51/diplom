@@ -197,10 +197,11 @@
       flex-wrap: wrap;
   }
 
-  .trend-card:nth-child(-n+3) {
-     margin-right: 0.5%;
+@media (min-width: 1201px) {
+  .trend-card:nth-child(n+2) {
+     margin-left: 0.5%;
   }
-
+}
   .trend-card {
       display: flex;
       align-items: flex-end;
@@ -1174,22 +1175,32 @@
 
   @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
     .trend-card {
-      width: calc(99%/2);
+      width: calc(99.5%/2);
+      margin-bottom: 0.5%;
     }
 
-    .trend-card:nth-child(-n+2) {
-      margin-bottom: 0.5%;
+    .trend-card:nth-child(2n) {
+     margin-left: 0.5%;
     }
   }
 
-  @media (max-width: 640px) {
+  @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
     .trend-card {
-      width: calc(99%/2);
+      width: calc(98.5%/4);
     }
 
-    .trend-card:nth-child(-n+2) {
+    .trend-card:nth-child(n+2) {
+      margin-left: 0.5%;
+    }
+  }
+  @media (max-width: 640px) and (orientation:landscape) {
+    .trend-card {
+      width: calc(99.5%/2);
       margin-bottom: 0.5%;
     }
+    .trend-card:nth-child(2n) {
+      margin-left: 0.5%;
+     }
   }
 
   @media (max-width: 640px) and (orientation: portrait) {
@@ -1204,4 +1215,3 @@
       background-image: url(../images/banner-mobile.jpg);
     }
   }
- 
