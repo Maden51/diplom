@@ -317,7 +317,7 @@
   }
   
   .image {
-    width: 380px;
+    width: 400px;
     background-color: #a3cac7;
     position: relative;
   }
@@ -396,9 +396,9 @@
   }
   
   aside.aside-content {
-    width: 272px;
-    
+    max-width: 272px;
   }
+
   .aside-content {
     display: flex;
     flex-wrap: wrap;
@@ -1181,6 +1181,15 @@
      background-image: url(../images/banner-bg-tablet.jpg);
    }
 
+   .card::after {
+    content: "";
+    display: block;
+    background: #eeeeee;
+    height: 3px;
+    max-width: 340px;
+    margin-top: 25px;
+  }
+
    .product {
      width: calc(94%/2);
      margin-bottom: 3%;
@@ -1200,6 +1209,10 @@
 
    .radio-group-text::before {
      background-size: 25px;
+   }
+
+   .popup-title, .trends-title, .products-title {
+     font-size: 18px;
    }
   }
 
@@ -1376,6 +1389,17 @@
 
     .popup-title {
       font-size: 16px;
+      padding-top: 25px;
+    }
+
+    .header-slogan {
+      flex-direction: column;
+      min-height: 90vh;
+      margin-top: 180px;
+    }
+
+    .header-title {
+      margin-top: 0;
     }
 
     .header-logo {
@@ -1388,5 +1412,9 @@
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 35px;
+    }
+
+    .popup-button {
+      padding: 15px 90px;
     }
   }
