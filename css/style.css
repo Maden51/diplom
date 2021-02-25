@@ -177,7 +177,7 @@
       text-transform: uppercase;
       text-align: center;
       margin-top: 65px;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
   }
 
   .trends-title::after {
@@ -349,6 +349,7 @@
   }
   
   .card-title-link {
+    display: flex;
     font-size: 20px;
     text-decoration: none;
     line-height: 24px;
@@ -764,7 +765,6 @@
   .product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     box-sizing: border-box;
   }
 
@@ -1181,6 +1181,18 @@
    .product:nth-child(2n+1) {
      margin-right: 6%;
    }
+
+   .popup-close::after {
+     top: 0;
+     left: -10px;
+     width: 30px;
+     height: 30px;
+     background-size: 30px;
+   }
+
+   .radio-group-text::before {
+     background-size: 25px;
+   }
   }
 
   @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
@@ -1223,5 +1235,50 @@
   @media (max-width: 640px) {
     .header {
       background-image: url(../images/banner-mobile.jpg);
+    }
+
+    .header-title {
+      font-size: 26px;
+      line-height: 36px;
+    }
+
+    .menu-button {
+      font-size: 20px;
+    }
+
+    .menu-button:after, .menu-button:before {
+      height: 15%;
+    }
+
+    .menu-button-label {
+      height: 15%;
+    }
+
+    .trend-content {
+      padding: 30px 20px;
+    }
+
+    .trend-text {
+      font-size: 16px;
+    }
+
+    .main-content {
+      display: block;
+      margin-top: 45px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .image {
+      max-width: 330px;
+    }
+
+    .card-title-link {
+      font-size: 16px;
+    }
+
+    .card-text {
+      font-size: 14px ;
+      line-height: 20px;
     }
   }
