@@ -201,6 +201,10 @@
   .trend-card:nth-child(n+2) {
      margin-left: 0.5%;
   }
+
+  .product:nth-child(-n+2) {
+    margin-right: 6%;
+  }
 }
   .trend-card {
       display: flex;
@@ -296,8 +300,8 @@
     margin-top: 63px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
     display: flex;
     justify-content: center;
     font-family: "Open Sans", arial, sans-serif;
@@ -305,7 +309,7 @@
   
   .posts {
     max-width: 780px;
-    margin-right: 120px;
+    margin-right: auto;
   }
   
   .image {
@@ -726,12 +730,12 @@
 
   .products {
     font-family: "Open Sans" , arial, sans-serif;
-    width: 1170px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 65px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .products-title {
@@ -759,20 +763,17 @@
 
   .product-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     box-sizing: border-box;
   }
 
   .product {
-    width: 33.33%;
+    width: calc(88%/3);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     color: #0f0d0e;
-  }
-
-  .product:nth-child(-n+2) {
-    margin-right: 65px;
   }
 
   .product-imgbox {
@@ -853,9 +854,9 @@
   }
  
   .footer {
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1170px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 40px;
     margin-right: auto;
     margin-left: auto;
@@ -1170,6 +1171,15 @@
  @media (min-width: 641px) and (max-width:1200px) {
    .header {
      background-image: url(../images/banner-bg-tablet.jpg);
+   }
+
+   .product {
+     width: calc(94%/2);
+     margin-bottom: 3%;
+   }
+
+   .product:nth-child(2n+1) {
+     margin-right: 6%;
    }
   }
 
