@@ -1186,7 +1186,7 @@
     display: block;
     background: #eeeeee;
     height: 3px;
-    max-width: 340px;
+    max-width: 400px;
     margin-top: 25px;
   }
 
@@ -1394,7 +1394,6 @@
 
     .header-slogan {
       flex-direction: column;
-      min-height: 90vh;
       margin-top: 180px;
     }
 
@@ -1415,6 +1414,7 @@
     }
 
     .popup-button {
-      padding: 15px 90px;
+      width: -webkit-fill-available;
+      padding: 15px;
     }
   }
