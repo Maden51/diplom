@@ -419,9 +419,10 @@
     width: 65px;
     background: #b59f5b;
     height: 3px;
-    position: absolute;
-    left: 105px;
-    bottom: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
     opacity: 0.4;
   }
   
@@ -492,9 +493,13 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
   
+  .group-search {
+    width: 86%;
+  }
+  
   .searchbox {
     box-sizing: border-box;
-    width: 223px;
+    width: -webkit-fill-available;
     height: 47px;
     padding: 15px 20px;
     font-size: 13px;
@@ -612,7 +617,6 @@
     margin-right: auto;
     margin-left: auto;
     font-size: 14px;
-    line-height: 29.15px;
     font-weight: bold;
     color: #0f0d0e;
     text-transform: uppercase;
@@ -1282,6 +1286,10 @@
       line-height: 20px;
     }
 
+    .card {
+      margin-bottom: 35px;
+    }
+
     .card::after {
       content: "";
       display: block;
@@ -1291,6 +1299,50 @@
       margin-top: 25px;
     }
 
+    .aside-content {
+      max-width: 330px;
+    }
+
+    .new-posts-title {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .search {
+      margin-top: 45px;
+    }
+
+    .tags-aside-title, .themes-title, .products-title, .trends-title {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    
+    .products {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 40px;
+    }
+
+    .product-list {
+      flex-direction: column;
+      
+    }
+
+    .product {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .product-title {
+      font-size: 17px;
+    }
+
+    .right {
+      margin-top: 45px;
+    }
+
+    
 
   
   }
