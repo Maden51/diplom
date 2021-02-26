@@ -1284,10 +1284,15 @@
     }
 
     .main-content {
-      display: block;
+      flex-direction: column;
       margin-top: 45px;
       padding-left: 15px;
       padding-right: 15px;
+      align-items: center;
+    }
+
+    .posts {
+      display: contents;
     }
 
     .image {
