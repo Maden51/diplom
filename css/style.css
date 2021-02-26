@@ -1190,6 +1190,10 @@
     margin-top: 25px;
   }
 
+  .aside-content {
+    margin-left: 5%;
+  }
+
    .product {
      width: calc(94%/2);
      margin-bottom: 3%;
