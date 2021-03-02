@@ -1253,6 +1253,7 @@
   @media (max-width: 640px) {
     .header {
       background-image: url(../images/banner-mobile.jpg);
+      padding: 30px 15px;
     }
 
     .header-title {
@@ -1265,6 +1266,10 @@
 
     .menu {
       align-self: flex-end;
+    }
+
+    .container {
+      padding: 0;
     }
 
     .menu-button {
@@ -1407,6 +1412,7 @@
 
     .header-slogan {
       flex-direction: column;
+      padding-top: 0;
     }
 
     .header-title {
