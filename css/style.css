@@ -31,10 +31,6 @@
     z-index: 0;
     font-family: "Open Sans", arial, sans-serif;
    }
-
-   .header-logo-mobile {
-     display: none
-   }
   
   .header:after {
     content: "";
@@ -247,12 +243,13 @@
 
   .trend-tag {
       font-size: 14px;
+      margin-right: 15px;
       font-weight: bold;
       font-family: "Open Sans", arial, sans-serif;
   }
 
-  .trend-tag:nth-child(1) {
-    margin-right: 15px;
+  .trend-tag:last-child {
+      margin-right: 0;
   }
 
   .trend-text {
@@ -1262,6 +1259,14 @@
       font-size: 26px;
     }
 
+    .top-panel-container {
+      flex-direction: column-reverse;
+    }
+
+    .menu {
+      align-self: flex-end;
+    }
+
     .menu-button {
       font-size: 20px;
     }
@@ -1272,6 +1277,11 @@
 
     .menu-button-label {
       height: 15%;
+    }
+
+    .header-logo {
+      width: 270px;
+      margin-bottom: 35px;
     }
 
     .trend-content {
@@ -1401,18 +1411,6 @@
 
     .header-title {
       margin-top: 0;
-    }
-
-    .header-logo {
-      display: none;
-    }
-
-    .header-logo-mobile {
-      display: block;
-      width: 270px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 35px;
     }
 
     .popup-button {
